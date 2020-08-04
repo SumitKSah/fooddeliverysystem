@@ -9,8 +9,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-import com.food.app.service.ComponentDetailsService;
-
 @EnableAsync
 @EnableScheduling
 @EnableJpaAuditing
@@ -23,8 +21,6 @@ public class FoodDeliveryApplication {
 
 	public static void main(String[] args) {
 		context = SpringApplication.run(FoodDeliveryApplication.class, args);
-		context.getBean(ComponentDetailsService.class)
-				.createComponentDetails(context.getEnvironment().getProperty("spring.application.name"));
 	}
  
 }
