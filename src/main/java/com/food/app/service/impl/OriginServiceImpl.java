@@ -16,7 +16,7 @@ public class OriginServiceImpl implements OriginSrevice {
 	private OriginRepository originRepository;
 
 	@Override
-	public List<OriginEntity> getOriginByPinCode(Integer pinCode, String destinationName) {
+	public List<OriginEntity> getOriginByPinCodeAndDestinationName(Integer pinCode, String destinationName) {
 		// TODO Auto-generated method stub
 
 		return originRepository.findByPinCodeAndDestinationName(pinCode, destinationName);

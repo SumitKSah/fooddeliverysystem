@@ -6,6 +6,6 @@ import com.food.app.entity.OriginEntity;
 
 public interface OriginSrevice {
 
-	List<OriginEntity> getOriginByPinCode(Integer pinCode, String destinationName);
+	List<OriginEntity> getOriginByPinCodeAndDestinationName(Integer pinCode, String destinationName);
 
 }

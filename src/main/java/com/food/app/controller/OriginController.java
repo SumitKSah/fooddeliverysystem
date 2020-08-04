@@ -26,7 +26,7 @@ public class OriginController {
 	@ResponseStatus(value = HttpStatus.CREATED)
 	public List<OriginEntity> createFoodItem(@RequestBody OriginEntity originEntity) {
 
-		return originSrevice.getOriginByPinCode(originEntity.getPinCode(), originEntity.getDestinationName());
+		return originSrevice.getOriginByPinCodeAndDestinationName(originEntity.getPinCode(), originEntity.getDestinationName());
 	}
 
 }
